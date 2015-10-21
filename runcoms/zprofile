@@ -17,8 +17,9 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export SUBLIME=subl
+export EDITOR='$SUBLIME --wait'
+export VISUAL=$EDITOR
 export PAGER='less'
 
 #
@@ -43,10 +44,14 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
+  /Users/elipapa/anaconda/bin
   /usr/local/{bin,sbin}
+  /usr/local/var/rbenv/shims
   $path
 )
 
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #
 # Less
 #
