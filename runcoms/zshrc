@@ -12,9 +12,9 @@ fi
 
 # Customize to your needs...
 
-# Load API tokens and other local modifications from 
-[[ -r ~/.extra.local ]] && . ~/.extra.local
 
+# load Z
+source `brew --prefix`/etc/profile.d/z.sh
 
 # put time in right prompt if this works
 RPROMPT="%{$fg[grey]%}[%*]" 
