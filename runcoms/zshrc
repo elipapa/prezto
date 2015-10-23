@@ -13,11 +13,11 @@ fi
 # Customize to your needs...
 
 
-# load Z
-source `brew --prefix`/etc/profile.d/z.sh
+# # load Z
+# source `brew --prefix`/etc/profile.d/z.sh
 
 # put time in right prompt if this works
-RPROMPT="%{$fg[grey]%}[%*]" 
+RPROMPT="%{$fg[grey]%}[%*]"
 
 # #  set DEFAULT_USER to hide the “user@hostname” info when you’re logged in as yourself on your local machine.
 DEFAULT_USER=elipapa
