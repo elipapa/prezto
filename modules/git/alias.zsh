@@ -44,7 +44,7 @@ alias gbS='git show-branch -a'
 # Commit (c)
 alias gc='git commit --verbose'
 alias gca='git commit --verbose --all'
-alias gcm='git commit --message'
+alias gcm='git commit -a --message'
 alias gco='git checkout'
 alias gcO='git checkout --patch'
 alias gcf='git commit --amend --reuse-message HEAD'
@@ -55,6 +55,8 @@ alias gcr='git revert'
 alias gcR='git reset "HEAD^"'
 alias gcs='git show'
 alias gcl='git-commit-lost'
+
+alias gacp='git-addcommitpush'
 
 # Conflict (C)
 alias gCl='git status | sed -n "s/^.*both [a-z]*ed: *//p"'
