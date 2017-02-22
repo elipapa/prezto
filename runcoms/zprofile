@@ -16,8 +16,8 @@ fi
 #
 # Editors
 #
-
-export EDITOR='atom --wait'
+export GIT_EDITOR='vim'
+export EDITOR='code --wait'
 export VISUAL=$EDITOR
 export PAGER='less'
 
@@ -41,11 +41,16 @@ typeset -gU cdpath fpath mailpath path
 #   $cdpath
 # )
 
+export GOPATH=$HOME/Go
+export GOROOT=/usr/local/opt/go/libexec
+
 # Set the list of directories that Zsh searches for programs.
 path=(
   $HOME/.local/bin
   /usr/local/{bin,sbin}
   /usr/local/var/rbenv/shims
+  $GOPATH/bin
+  $GOROOT/bin
   $path
 )
 
