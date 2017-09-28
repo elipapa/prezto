@@ -17,9 +17,14 @@ fi
 # Editors
 #
 export GIT_EDITOR='vim'
-export EDITOR='code --wait'
+export EDITOR='code --wait -n'
 export VISUAL=$EDITOR
 export PAGER='less'
+
+#
+# Python 
+#
+export PYTHONDONTWRITEBYTECODE=1
 
 #
 # Language
@@ -49,6 +54,7 @@ path=(
   $HOME/.local/bin
   /usr/local/{bin,sbin}
   /usr/local/var/rbenv/shims
+  /Users/epapa/miniconda3/bin
   $GOPATH/bin
   $GOROOT/bin
   $path
