@@ -12,6 +12,7 @@ fi
 
 # Customize to your needs...
 
+source <(/Users/epapa/google-cloud-sdk/bin/kubectl completion zsh)
 
 # # load Z
 # source `brew --prefix`/etc/profile.d/z.sh
